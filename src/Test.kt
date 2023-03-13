@@ -6,11 +6,16 @@ open class MyParentClass {
 // Subclass
 class MyChildClass: MyParentClass() {
   fun myFunction() {
+	var count = 0
 	Thread.sleep(4000)
+	while(count < 5)
+	{
     println(x) // x is defined in the superclass
     try { throw Exception("Hi There!") } catch (e: Exception) { println(e) }
-	Thread.sleep(5000)
-  }
+	Thread.sleep(15000)
+	count++
+  	}
+	}
 }
 
 // Create an object of the MyChildClass and call myFunction
