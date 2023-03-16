@@ -12,8 +12,8 @@ class MyChildClass: MyParentClass() {
     {
       println(x) // x is defined in the superclass
       try
-      { 
-        throw Exception("Hi There!") 
+      {
+        throw Exception("Hi There!")
       }
       catch (e: Exception)
       {
@@ -27,6 +27,7 @@ class MyChildClass: MyParentClass() {
 
 // Create an object of the MyChildClass and call myFunction
 fun main() {
+  Thread.sleep(10000)
   val myObj = MyChildClass()
   myObj.myFunction()
 }
