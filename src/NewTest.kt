@@ -1,11 +1,16 @@
 fun main(args: Array<String>) {
   Thread.sleep(5000)
-  try 
+  var count = 0
+  while (count < 5)
   {
-    throw Exception("Hi lets disco")
+    try 
+    {
+      throw Exception("Hi lets disco")
+    }
+    catch(e: Exception)
+    {
+      println(e)
+    }
+    count++
   }
-  catch(e: Exception)
-  {
-    println(e)
-  } 
 }
